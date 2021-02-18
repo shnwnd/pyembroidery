@@ -10,7 +10,7 @@ def read_pc_file(f, out, settings=None):
     # 0 for PCD,
     # 1 for PCQ (MAXI),
     # 2 for PCS small hoop(80x80),
-    # 3 for PCS with large hoop.
+    # 3 for PCS with large hoop(115x120).
     color_count = read_int_16le(f)
     for i in range(0, color_count):
         thread = EmbThread()
